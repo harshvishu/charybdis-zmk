@@ -1,9 +1,10 @@
 #include <behaviors/mouse_keys.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define BASE 0
@@ -85,9 +86,9 @@
         Symbol {
             label = "Symbol";
             bindings = <
-&kp TILDE  &kp AMPS   &kp STAR   &trans    &kp PLUS  &trans      &kp LBRC  &kp RBRC  &trans     &kp PIPE  &kp MINUS  &kp DLLR
-&kp PRCNT  &kp CARET  &kp EQUAL  &trans    &kp LPAR  &kp RPAR    &kp DQT   &kp APOS  &kp UNDER  &kp EXCL  &kp AT     &kp HASH
-&kp GRAVE  &trans     &kp LBKT   &kp RBKT  &trans    &kp BSLH    &trans    &trans    &trans     &trans    &trans
+&kp TILDE  &kp AMPS   &kp STAR   &trans    &kp PLUS  &trans      &kp LBRC        &kp RBRC  &trans     &kp PIPE  &kp MINUS  &kp DLLR
+&kp PRCNT  &kp CARET  &kp EQUAL  &trans    &kp LPAR  &kp RPAR    &kp DQT         &kp APOS  &kp UNDER  &kp EXCL  &kp AT     &kp HASH
+&kp GRAVE  &trans     &kp LBKT   &kp RBKT  &trans    &kp BSLH    &studio_unlock  &trans    &trans     &trans    &trans
             >;
         };
 
