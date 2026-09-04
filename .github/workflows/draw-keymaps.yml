@@ -25,7 +25,7 @@ jobs:
       west_config_path: "config"
       output_folder: "keymap-drawer"
       parse_args: ""
-      draw_args: "charybdis:'-j config/info.json -l five_column_transform'"
+      draw_args: "charybdis:'-j config/info.json -l default_transform'"
       destination: "artifact"
       artifact_name: "keymap-drawer"
       fail_on_error: true
