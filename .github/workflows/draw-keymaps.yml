@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   draw:
@@ -30,25 +30,21 @@ jobs:
       artifact_name: "keymap-drawer"
       fail_on_error: true
 
-  commit:
-    name: Commit rendered keymap
+  verify:
+    name: Verify committed keymap
     needs: draw
-    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout pull request branch
+      - name: Checkout pull request
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
 
       - name: Download rendered keymap
         uses: actions/download-artifact@v4
         with:
           name: keymap-drawer
-          path: keymap-drawer
+          path: generated-keymap
 
-      - name: Commit rendered keymap
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "keymap-drawer render"
-          file_pattern: "keymap-drawer/*.svg keymap-drawer/*.yaml"
+      - name: Verify generated files are current
+        run: |
+          diff --brief keymap-drawer/charybdis.yaml generated-keymap/charybdis.yaml
+          diff --brief keymap-drawer/charybdis.svg generated-keymap/charybdis.svg
