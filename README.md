@@ -7,7 +7,7 @@ version with [nice!nano](https://nicekeyboards.com/nice-nano/).
 
 The base layer keeps the pointer and scroll layers on the left lower thumb
 keys, so they can be held while operating the right-hand trackball. The left
-thumb cluster provides **GUI**, **Num**, and a Shift/Space mod-tap; the right
+thumb cluster provides **GUI**, a Shift/Space mod-tap, and **Num**; the right
 thumb cluster provides **Sym**, **Enter**, and Right Alt/AltGr.
 
 The left outer home key is **Caps Lock when tapped** and **Left Shift when

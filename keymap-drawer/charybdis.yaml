@@ -50,8 +50,8 @@ layers:
   - /
   - '`'
   - $$mdi:apple-keyboard-command$$
-  - Num
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - Num
   - Sym
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Pointer
@@ -107,8 +107,8 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - Func
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -221,8 +221,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - '&studio_unlock'
   - {t: ▽, type: trans}
