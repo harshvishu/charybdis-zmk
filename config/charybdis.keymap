@@ -91,11 +91,11 @@
         Ptr {
             label = "Pointer";
             bindings = <
-&trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans    &trans    &trans  &trans  &trans  &trans  &mkp MB5   &mkp MB4   &trans     &trans  &trans
-&trans  &trans    &trans    &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans
-&trans  &mo SNIP  &mo SCRL  &trans  &trans  &trans  &trans  &msc LCLK  &msc RCLK  &msc MCLK  &trans  &trans
-                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans  &trans
+&trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans     &mkp MCLK  &trans     &trans  &trans
+&trans  &trans    &trans    &trans  &trans  &trans  &trans  &mkp LCLK  &kp UP     &mkp RCLK  &trans  &trans
+&trans  &mo SNIP  &mo SCRL  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN   &kp RIGHT  &trans  &trans
+                            &trans  &trans  &trans  &trans   &trans
                                     &trans  &trans  &trans
             >;
         };
@@ -103,11 +103,11 @@
         Scroll {
             label = "Scroll";
             bindings = <
-&trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &mo SCRL  &trans  &trans  &trans  &trans          &trans          &trans        &trans           &trans  &trans
-                          &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans          &msc SCRL_UP    &trans           &trans  &trans
+&trans  &trans  &mo SCRL  &trans  &trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
+                          &trans  &trans  &trans  &trans  &trans
                                   &trans  &trans  &trans
             >;
         };
@@ -115,10 +115,10 @@
         Snipe {
             label = "Snipe";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp UP    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
                         &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans  &trans
             >;
