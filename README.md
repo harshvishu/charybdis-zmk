@@ -11,6 +11,10 @@ thumb cluster provides **Shift**, **Num**, and **Space**; the right thumb
 cluster provides **Sym** and **Enter**. Right Control is on the remaining
 right thumb key for common editor shortcuts.
 
+## Keymap
+
+[![Charybdis keymap](keymap-drawer/charybdis.svg)](keymap-drawer/charybdis.svg)
+
 ## ZMK Studio
 
 ZMK Studio is enabled on the right half, which is the split central. Flash the
@@ -19,5 +23,4 @@ To unlock Studio from the base layer, hold the left **Num** thumb key, hold the
 right **Sym** thumb key (which becomes the Func layer key), and tap the right
 **Enter** thumb key. The `studio-rpc-usb-uart` build snippet is already applied
 to the right-half build in `build.yaml`.
-
 

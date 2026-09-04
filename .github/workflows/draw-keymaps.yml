@@ -1,13 +1,54 @@
 name: Draw ZMK keymaps
-on: [workflow_dispatch]
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/draw-keymaps.yml"
+      - "config/*.keymap"
+      - "config/*.dtsi"
+      - "config/info.json"
+      - "keymap_drawer.config.yaml"
+
+concurrency:
+  group: draw-keymaps-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
 jobs:
   draw:
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    permissions:
-      contents: write
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@v0.23.0
     with:
       keymap_patterns: "config/*.keymap"
       config_path: "keymap_drawer.config.yaml"
+      west_config_path: "config"
       output_folder: "keymap-drawer"
       parse_args: ""
       draw_args: "charybdis:'-j config/info.json -l five_column_transform'"
+      destination: "artifact"
+      artifact_name: "keymap-drawer"
+      fail_on_error: true
+
+  commit:
+    name: Commit rendered keymap
+    needs: draw
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pull request branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Download rendered keymap
+        uses: actions/download-artifact@v4
+        with:
+          name: keymap-drawer
+          path: keymap-drawer
+
+      - name: Commit rendered keymap
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "keymap-drawer render"
+          file_pattern: "keymap-drawer/*.svg keymap-drawer/*.yaml"
