@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - \
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-shift$$'}
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LEFT SHIFT
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -48,15 +48,15 @@ layers:
   - ','
   - .
   - /
-  - ''
-  - $$mdi:apple-keyboard-shift$$
+  - '`'
+  - $$mdi:apple-keyboard-command$$
   - Num
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Sym
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Pointer
   - Scroll
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
   Num:
   - F12
   - F1
@@ -83,25 +83,25 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '='
   - '-'
-  - +
-  - _
-  - '|'
-  - '['
-  - ']'
+  - '='
+  - '-'
+  - \
+  - '{'
+  - '}'
   - '{'
   - '}'
   - \
@@ -191,10 +191,10 @@ layers:
   - F4
   - F5
   - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - ''
+  - ''
+  - ''
+  - ''
   - RGB BRI
   - RGB TOG
   - MUTE
@@ -206,7 +206,7 @@ layers:
   - {t: '$$mdi:bluetooth-connect$$', h: '0'}
   - {t: '$$mdi:bluetooth-connect$$', h: '1'}
   - {t: ▽, type: trans}
-  - F11
+  - ''
   - RGB BRD
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -218,7 +218,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F12
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
