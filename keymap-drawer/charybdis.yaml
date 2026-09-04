@@ -49,14 +49,14 @@ layers:
   - .
   - /
   - ''
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-command$$'}
+  - $$mdi:apple-keyboard-shift$$
   - Num
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:keyboard-space$$
   - Sym
-  - {t: '$$mdi:keyboard-space$$', h: RMETA}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - Pointer
   - Scroll
-  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
   Num:
   - F12
   - F1
@@ -217,14 +217,14 @@ layers:
   - OUT USB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
+  - '&studio_unlock'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
