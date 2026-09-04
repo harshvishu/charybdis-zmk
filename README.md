@@ -54,7 +54,7 @@ profile switches hosts; it does not clear an existing bond.
 | Action | Combination |
 | --- | --- |
 | Toggle underglow | **Func + Left Control** |
-| Next effect | **Func + Backspace** |
+| Next effect (Solid → Breathe → Spectrum → Swirl) | **Func + Backspace** |
 | Increase brightness | **Func + Backslash** |
 | Decrease brightness | **Func + Apostrophe** |
 
