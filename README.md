@@ -10,6 +10,11 @@ keys, so they can be held while operating the right-hand trackball. The left
 thumb cluster provides **GUI**, **Num**, and a Shift/Space mod-tap; the right
 thumb cluster provides **Sym**, **Enter**, and Right Alt/AltGr.
 
+The left outer home key is **Caps Lock when tapped** and **Left Shift when
+held**. The left Space thumb key is **Space when tapped** and **Left Shift
+when held**. These mod-taps use a 200 ms tapping term and may be held
+immediately after another keypress.
+
 ## Keymap
 
 [![Charybdis keymap](keymap-drawer/charybdis.svg)](keymap-drawer/charybdis.svg)

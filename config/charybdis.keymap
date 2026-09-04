@@ -19,7 +19,6 @@
 
 &mt {
     tapping-term-ms = <200>;
-    require-prior-idle-ms = <150>;
 };
 
 / {
