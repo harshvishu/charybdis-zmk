@@ -19,20 +19,20 @@
         src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".json" ".keymap" ".overlay" ".shield" ".yml" "_defconfig" ];
 
         # boards
-        board = "nice_nano_v2";
+        board = "nice_nano//zmk";
         shield = "charybdis_%PART%";
         parts = [ "left" "right" ];
         # enable for dongle build
         #extraCmakeFlags = [ "-DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n" ];
 
         # dongle
-        #board = "nice_nano_v2";
+        #board = "nice_nano//zmk";
         #shield = "charybdis_%PART%";
         #parts = [ "dongle" ];
         #extraCmakeFlags = [ "-DCONFIG_ZMK_STUDIO=y" ];
 
         # bt settings reset
-        #board = "nice_nano_v2";
+        #board = "nice_nano//zmk";
         #shield = "settings_reset";
         #parts = [ "left" "right" "dongle" ];
 
