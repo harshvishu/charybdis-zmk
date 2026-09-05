@@ -17,30 +17,43 @@ combos {
   xc_alt {
     bindings = <&kp LALT>;
     key-positions = <38 39>;
+    layers = <BASE>;
   };
 
   comdot_alt {
     bindings = <&kp LALT>;
     key-positions = <44 45>;
+    layers = <BASE>;
   };
 
   zx_shift {
     bindings = <&kp LSHFT>;
     key-positions = <37 38>;
+    layers = <BASE>;
+  };
+
+  zx_snipe {
+    bindings = <&mo SNIP>;
+    key-positions = <37 38>;
+    layers = <PTR SCRL>;
+    timeout-ms = <75>;
   };
 
   dotslash_shift {
     bindings = <&kp RSHFT>;
     key-positions = <45 47>;
+    layers = <BASE>;
   };
 
   fg_ctrl {
     bindings = <&kp LCTRL>;
     key-positions = <29 28>;
+    layers = <BASE>;
   };
 
   hj_ctrl {
     bindings = <&kp RCTRL>;
     key-positions = <31 30>;
+    layers = <BASE>;
   };
 }; 

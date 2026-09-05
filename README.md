@@ -5,15 +5,14 @@ version with [nice!nano](https://nicekeyboards.com/nice-nano/).
 
 ## Ergonomic defaults
 
-The base layer keeps the pointer and scroll layers on the left lower thumb
-keys, so they can be held while operating the right-hand trackball. The left
-thumb cluster provides **GUI**, a Shift/Space mod-tap, and **Num**; the right
-thumb cluster provides **Sym**, **Enter**, and Right Alt/AltGr.
+The base layer keeps the Pointer layer on a left lower thumb key so it can be
+held while operating the right-hand trackball. The left thumb cluster provides
+**GUI/Command**, **Space**, **Num**, **Pointer**, and **Left Alt/Option**; the
+right thumb cluster provides **Sym**, **Enter**, and Right Alt/AltGr.
 
-The left outer home key is **Caps Lock when tapped** and **Left Shift when
-held**. The left Space thumb key is **Space when tapped** and **Left Shift
-when held**. These mod-taps use a 200 ms tapping term and may be held
-immediately after another keypress.
+The left outer home and bottom keys provide dedicated **Left Shift** and
+**Left Control**. No base-layer modifier uses hold-tap timing. Caps Lock
+remains available as **Func + G**.
 
 ## Keymap
 
@@ -26,13 +25,45 @@ pressing another key.
 
 | Layer | How to activate | Highlights |
 | --- | --- | --- |
-| **Num** | Hold the left **Num** thumb key | Numbers, braces, and F1–F12 |
-| **Sym** | Hold the right **Sym** thumb key | Arrows, Home/End, Page Up/Down, Insert/Delete, Tab/Shift-Tab, and quotes |
+| **Num** | Hold the left **Num** thumb key | Left-hand numeric pad, editing keys, and F1–F12 |
+| **Sym** | Hold the right **Sym** thumb key | Complete programming punctuation set, Backspace, and Delete |
 | **Func** | Hold **Num + Sym** together | Bluetooth, USB, media, RGB, function keys, Caps Lock, Game, and Studio controls |
-| **Pointer** | Hold the lower-left **Pointer** thumb key | Left/middle/right click, mirrored arrow keys, and access to Snipe |
-| **Scroll** | Hold the lower-left **Scroll** thumb key | The trackball and right directional keys scroll horizontally and vertically at reduced speed; the left directional keys remain arrows |
-| **Snipe** | Hold **Pointer + Z** | Precision trackball movement and arrow keys |
+| **Pointer** | Hold the lower-left **Pointer** thumb key | Mirrored mouse buttons and arrow keys, plus access to Scroll and Snipe |
+| **Scroll** | Hold **Pointer + Z** | The trackball and right directional keys scroll horizontally and vertically at reduced speed; the left directional keys remain arrows |
+| **Snipe** | Chord **Pointer + Z + X** within 75 ms and hold Z+X | Precision trackball movement and arrow keys |
 | **Game** | Hold **Func**, then tap **B** | Locks the gaming layer on; tap either the **Num** or **Sym** thumb key to return to Base |
+
+### Developer symbols
+
+The Sym layer follows the shifted number row and groups matching delimiters and
+operators together. Its unused outer-column keys are transparent, preserving
+Base-layer Escape, Tab, Shift, Control, Backspace, backslash, apostrophe, and
+grave access.
+
+| Positions | Symbols |
+| --- | --- |
+| Number row | `! @ # $ %` · `^ & * ( )` |
+| Q–T | `` ` ~ < > ? `` |
+| Y–P | `- = [ ] \` |
+| A–G | `; : ' " /` |
+| H–Semicolon | `_ + { } \|` |
+| V / B | Backspace / Delete |
+
+This covers the standard US programming punctuation set, including both kinds
+of brackets, braces, parentheses, quotes, slashes, comparison characters, and
+the common arithmetic and logical symbols.
+
+### Numeric pad and function keys
+
+The Num layer places a conventional numeric-pad pattern on the left and keeps
+all function keys on the right:
+
+```text
+7 8 9 / Backspace    F1  F2  F3  F4  F5  F6
+4 5 6 * =            F7  F8  F9  F10 F11 F12
+1 2 3 - ,
+0 . Enter + Delete
+```
 
 ### Function, Bluetooth, and media shortcuts
 
@@ -68,7 +99,10 @@ and **Scroll**, the left-hand **D/X/C/V** diamond acts as Up/Left/Down/Right.
 The right-hand **K/M/Comma/Period** diamond acts as arrows on **Pointer** and
 **Snipe**, and scrolls Up/Left/Down/Right on **Scroll**.
 
-These two-key combos can be pressed simultaneously without holding a layer:
+On Pointer, hold **Z** to scroll. Press **Z + X** together within 75 ms and
+hold both keys for Snipe. Release the keys and the keyboard returns to Pointer.
+
+These Base-layer two-key combos can be pressed simultaneously:
 
 | Keys | Result |
 | --- | --- |

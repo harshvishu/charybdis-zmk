@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - \
-  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -50,61 +50,61 @@ layers:
   - /
   - '`'
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:keyboard-space$$
   - Num
   - Sym
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Pointer
-  - Scroll
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-option$$
   Num:
-  - F12
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - /
+  - {t: '$$mdi:backspace$$', type: backspace}
   - F1
   - F2
   - F3
   - F4
   - F5
   - F6
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - '*'
+  - '='
   - F7
   - F8
   - F9
   - F10
   - F11
+  - F12
   - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '='
   - '-'
-  - '='
-  - '-'
-  - \
-  - '{'
-  - '}'
-  - '{'
-  - '}'
-  - \
+  - ','
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - .
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - +
+  - $$mdi:backspace-reverse-outline$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -116,52 +116,52 @@ layers:
   - {t: ▽, type: trans}
   Sym:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
-  - Sft+`
-  - ''
-  - ''
-  - ''
-  - PG UP
-  - ''
-  - ''
-  - HOME
-  - END
+  - '~'
+  - <
+  - '>'
+  - '?'
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - $$mdi:keyboard-tab$$
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:keyboard-tab-reverse$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - PG DN
+  - ;
+  - ':'
   - ''''
   - '"'
-  - INS
+  - /
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Func
@@ -310,7 +310,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
+  - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - '&mkp RCLK'
   - $$mdi:arrow-up-bold$$
@@ -322,8 +322,8 @@ layers:
   - '&mkp RCLK'
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - Snipe
+  - $$mdi:apple-keyboard-control$$
+  - Scroll
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -367,7 +367,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-up-bold$$
@@ -379,8 +379,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
   - {t: ▽, type: trans}
+  - {type: held}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -396,8 +396,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Snipe:
   - ''
@@ -424,21 +424,21 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:arrow-up-bold$$
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - $$mdi:arrow-up-bold$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:arrow-up-bold$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:arrow-left-bold$$', type: held}
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: ▽, type: trans}
@@ -453,19 +453,28 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [38, 39]
   k: $$mdi:apple-keyboard-option$$
+  l: [Base]
 - p: [44, 45]
   k: $$mdi:apple-keyboard-option$$
+  l: [Base]
 - p: [37, 38]
   k: $$mdi:apple-keyboard-shift$$
+  l: [Base]
+- p: [37, 38]
+  k: Snipe
+  l: [Pointer, Scroll]
 - p: [45, 47]
   k: $$mdi:apple-keyboard-shift$$
+  l: [Base]
 - p: [29, 28]
   k: $$mdi:apple-keyboard-control$$
+  l: [Base]
 - p: [31, 30]
   k: $$mdi:apple-keyboard-control$$
+  l: [Base]
