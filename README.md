@@ -29,8 +29,8 @@ pressing another key.
 | **Num** | Hold the left **Num** thumb key | Numbers, braces, and F1–F12 |
 | **Sym** | Hold the right **Sym** thumb key | Arrows, Home/End, Page Up/Down, Insert/Delete, Tab/Shift-Tab, and quotes |
 | **Func** | Hold **Num + Sym** together | Bluetooth, USB, media, RGB, function keys, Caps Lock, Game, and Studio controls |
-| **Pointer** | Hold the lower-left **Pointer** thumb key | Left/middle/right click, arrow keys, and access to Snipe or Scroll |
-| **Scroll** | Hold the lower-left **Scroll** thumb key, or hold **Pointer + X** | The trackball and directional keys scroll horizontally and vertically at reduced speed |
+| **Pointer** | Hold the lower-left **Pointer** thumb key | Left/middle/right click, mirrored arrow keys, and access to Snipe |
+| **Scroll** | Hold the lower-left **Scroll** thumb key | The trackball and right directional keys scroll horizontally and vertically at reduced speed; the left directional keys remain arrows |
 | **Snipe** | Hold **Pointer + Z** | Precision trackball movement and arrow keys |
 | **Game** | Hold **Func**, then tap **B** | Locks the gaming layer on; tap either the **Num** or **Sym** thumb key to return to Base |
 
@@ -63,9 +63,10 @@ profile switches hosts; it does not clear an existing bond.
 ### Pointer controls and key combos
 
 The trackball normally moves the pointer. While holding **Pointer**, use
-**J/I/L** for left/middle/right click. On the **Pointer** and **Snipe** layers,
-**K/M/Comma/Period** act as Up/Left/Down/Right. On the **Scroll** layer, those
-same keys scroll Up/Left/Down/Right instead.
+**J/I/L** for left/middle/right click. On **Pointer**, **Snipe**, and **Scroll**,
+the left-hand **D/X/C/V** diamond acts as Up/Left/Down/Right. The right-hand
+**K/M/Comma/Period** diamond acts as arrows on **Pointer** and **Snipe**, and
+scrolls Up/Left/Down/Right on **Scroll**.
 
 These two-key combos can be pressed simultaneously without holding a layer:
 
