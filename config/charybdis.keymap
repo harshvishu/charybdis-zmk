@@ -91,8 +91,8 @@
             label = "Pointer";
             bindings = <
 &none  &trans    &trans    &trans    &trans     &trans  &trans  &trans     &trans    &trans     &trans  &none
-&none  &trans    &trans    &trans    &trans     &trans  &trans  &trans     &mkp MCLK  &trans     &trans  &none
-&none  &trans    &trans    &kp UP    &trans     &trans  &trans  &mkp LCLK  &kp UP     &mkp RCLK  &trans  &none
+&none  &trans    &trans    &mkp MCLK  &trans     &trans  &trans  &trans     &mkp MCLK  &trans     &trans  &none
+&none  &trans    &mkp RCLK  &kp UP    &mkp LCLK  &trans  &trans  &mkp LCLK  &kp UP     &mkp RCLK  &trans  &none
 &none  &mo SNIP  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &kp LEFT   &kp DOWN   &kp RIGHT  &trans  &none
                             &trans  &trans  &trans  &trans   &trans
                                     &trans  &trans  &trans

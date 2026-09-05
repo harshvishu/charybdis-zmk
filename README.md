@@ -62,11 +62,11 @@ profile switches hosts; it does not clear an existing bond.
 
 ### Pointer controls and key combos
 
-The trackball normally moves the pointer. While holding **Pointer**, use
-**J/I/L** for left/middle/right click. On **Pointer**, **Snipe**, and **Scroll**,
-the left-hand **D/X/C/V** diamond acts as Up/Left/Down/Right. The right-hand
-**K/M/Comma/Period** diamond acts as arrows on **Pointer** and **Snipe**, and
-scrolls Up/Left/Down/Right on **Scroll**.
+The trackball normally moves the pointer. While holding **Pointer**, use either
+**F/E/S** or **J/I/L** for left/middle/right click. On **Pointer**, **Snipe**,
+and **Scroll**, the left-hand **D/X/C/V** diamond acts as Up/Left/Down/Right.
+The right-hand **K/M/Comma/Period** diamond acts as arrows on **Pointer** and
+**Snipe**, and scrolls Up/Left/Down/Right on **Scroll**.
 
 These two-key combos can be pressed simultaneously without holding a layer:
 
